@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>JavaScript</title>
+        <style type="text/css"></style>
+        
+    </head>
+
+    <body>
+        
+        <p>秘密の暗号を入れてください</p>
+        
+        <p><input type="text" id="magicWord"></p>
+        
+        <button id="checkMagicWord">秘密の暗号をチェックする！</button>
+        
+        
+        <script type="text/javascript">
+            /*
+            var x = 2;
+            
+            if(x == 1){
+                alert("xは1です。");
+            }else{
+                alert("xは1ではありません。" + x + "です。");
+            }
+            */
+            
+            document.getElementById("checkMagicWord").onclick = function(){
+                var magicWordEnterd = document.getElementById("magicWord").value;
+                var magicWord = "abracadabra";
+                
+                if(magicWordEnterd == magicWord){
+                    alert("オッケーです。");
+                }else{
+                    alert("正しい暗号を入れてください。");
+                }
+            }
+            
+            
+            
+        </script>
+        
+    </body>
+    
+</html>
